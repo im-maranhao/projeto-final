@@ -9,6 +9,7 @@
 		echo "ERROR: 1";
 	}else{
 			//echo "Conexao realizada com sucesso";
+			
 	}
 	
 	?>

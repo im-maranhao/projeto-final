@@ -5,7 +5,6 @@ include('config/conexao.php');
 //include_once("config/seguranca.php");
 //seguranca_adm();
 
-
 $id_cliente = mysqli_real_escape_string($conn, $_GET['id_cliente']);
 
 $altera_cliente = "DELETE FROM clientes WHERE id_cliente='$id_cliente'";
@@ -24,10 +23,6 @@ if($resposta){
     header('Location: gerenciamento.php');
 }else{
 
-
-    
-  
-  
 
     $_SESSION['error'] = "<div class='alert alert-danger alert-dismissible fade show text text-center mb-0' role='alert'>
                                 

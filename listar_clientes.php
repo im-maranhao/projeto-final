@@ -65,7 +65,6 @@ if (isset($_SESSION['success'])) {
         $cpf = $linha['cpf'];
         $rg = $linha['rg'];
 
-
         // CONVERTENDO DATA/HORA PARA PADRAO PORTUGUES-BR
         $ultima_alteracao = $linha['ultima_alteracao'];
         $ultima_alteracao = date('d/m/Y H:i:s',  strtotime($ultima_alteracao));
@@ -253,7 +252,6 @@ if (isset($_SESSION['success'])) {
         }
     };
 
-
     $(document).ready(function() {
 
         $('#insert_form').on('submit', function(event) {
@@ -263,10 +261,8 @@ if (isset($_SESSION['success'])) {
             var telefone = $('#telefone'); // PEGA O CAMPO TELEFONE DO FORM
             var email = $('#email');
 
-
             var erro = $('.alert-danger'); // PEGA O CAMPO COM A class alert e CRIA A VARIAVEL erro
             var campo = $('#campo-erro'); // CRIA A VARIAVEL PATA EXIBIR O NOME DO CAMPO COM ERROcampo-sucesso
-
 
             erro.addClass('d-none');
             $('.is-invalid').removeClass('is-invalid');
@@ -278,7 +274,6 @@ if (isset($_SESSION['success'])) {
                 campo.html('cliente'); // ADICIONA AO ALERTA O NOME DO CAMPO NAO PREENCHIDO
                 nome.focus(); //COLOCA O CURSOR NO CAMPO COM ERRO
                 nome.addClass('is-invalid');
-
 
                 return false;
 

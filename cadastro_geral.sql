@@ -65,7 +65,6 @@ INSERT INTO `clientes` (`id_cliente`, `nome`, `email`, `telefone`, `celular`, `c
 
 --
 -- Estrutura da tabela `usuarios`
---
 
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
@@ -77,7 +76,6 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
---
 -- Extraindo dados da tabela `usuarios`
 
 -- INSERT INTO `usuarios` (`id`, `nome`, `usuario`, `senha`, `token`) VALUES
@@ -95,6 +93,8 @@ INSERT INTO `usuarios` (`nome`, `usuario`, `senha`, `token`) VALUES
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 

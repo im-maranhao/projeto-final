@@ -5,6 +5,7 @@ include('config/conexao.php');
 //include_once("config/seguranca.php");
 //seguranca_adm();
 
+
 $nome = mysqli_real_escape_string($conn, ucwords(strtolower($_POST['nome'])));
 $email = mysqli_real_escape_string($conn, strtolower($_POST['email']));
 $telefone = mysqli_real_escape_string($conn, $_POST['telefone']);
@@ -54,6 +55,5 @@ if($resposta){
      header('Location: gerenciamento.php');
     
 }
-
 
 ?>
